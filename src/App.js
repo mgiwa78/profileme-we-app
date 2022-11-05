@@ -10,7 +10,7 @@ const App = () => {
     <div className="app">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route index element={<LandingPage />} />
         </Routes>
       </BrowserRouter>
     </div>

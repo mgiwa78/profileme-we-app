@@ -8,13 +8,14 @@ export const HeroSectionContainer = styled.div`
   flex-wrap: wrap;
   position: relative;
   width: 100%;
+
   height: max-content;
 `;
 export const HeroSectionBackground = styled.div`
   width: 100%;
   height: 100%;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   position: absolute;
 
@@ -24,6 +25,7 @@ export const HeroSectionBox = styled.div`
   width: 100%;
   height: max-content;
   text-align: center;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,4 +42,5 @@ export const HeroSubText = styled.span`
 `;
 export const HeroImg = styled.img`
   width: 100%;
+  z-index: 2;
 `;

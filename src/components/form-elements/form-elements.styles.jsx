@@ -58,6 +58,6 @@ export const SearchIconContainer = styled.div`
   height: 30px;
   background-color: var(--c_primary);
   border-radius: 18px;
-  right: 8px;
+  right: 57px;
   top: 25%;
 `;
