@@ -1,13 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { GlobalStyles } from "./styles/globalstyles";
+import LandingPage from "./routes/landing-page/landing-page.components";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const router = createBrowserRouter([{ path: "/", element: <LandingPage /> }]);
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
+    <GlobalStyles />
   </React.StrictMode>
 );
 
