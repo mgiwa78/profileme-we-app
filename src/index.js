@@ -9,7 +9,15 @@ import LandingPage from "./routes/landing-page/landing-page.components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const router = createBrowserRouter([{ path: "/", element: <LandingPage /> }]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <LandingPage />,
+    },
+  ],
+  { basename: process.env.PUBLIC_URL }
+);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
